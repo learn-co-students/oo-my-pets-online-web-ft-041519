@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   # code goes here
     attr_accessor :name, :pets
@@ -52,7 +53,7 @@ class Owner
     def sell_pets
       @pets.each do |type|
         type.each do |array|
-          array.clear
+binding.pry
         end
       end
     end
